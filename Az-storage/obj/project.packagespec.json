@@ -1,0 +1,51 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "D:\\Illumina\\code\\kafka-storage-PoC\\Az-storage\\ClassLibrary1.csproj",
+    "projectName": "ClassLibrary1",
+    "projectPath": "D:\\Illumina\\code\\kafka-storage-PoC\\Az-storage\\ClassLibrary1.csproj",
+    "outputPath": "D:\\Illumina\\code\\kafka-storage-PoC\\Az-storage\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Confluent.Kafka": {
+          "target": "Package",
+          "version": "[0.11.6, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        },
+        "WindowsAzure.Storage": {
+          "target": "Package",
+          "version": "[9.3.2, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

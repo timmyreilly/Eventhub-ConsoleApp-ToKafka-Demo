@@ -1,0 +1,64 @@
+POST http://localhost:7071/admin/extensions/EventGridExtensionConfig?functionName=EventGridTrigger HTTP/1.1
+
+### 
+
+POST http://localhost:7071/admin/extensions/EventGridExtensionConfig?functionName=EventGridTrigger HTTP/1.1
+content-type: application/json
+aeg-event-type: notification
+
+[{
+  "topic": "/subscriptions/5c514147-21c3-4f7e-8329-625443da4254/resourceGroups/i-time/providers/Microsoft.Storage/storageAccounts/itime",
+  "subject": "/blobServices/default/containers/testcontainer/blobs/testfile.txt",
+  "eventType": "Microsoft.Storage.BlobCreated",
+  "eventTime": "2018-11-12T23:39:50.6286206Z",
+  "id": "246ad0a7-201e-00b3-10e1-7acbe406fd39",
+  "data": {
+    "api": "PutBlob",
+    "clientRequestId": "3ed2fefe-e6d4-11e8-b9dd-0a580af44006",
+    "requestId": "246ad0a7-201e-00b3-10e1-7acbe4000000",
+    "eTag": "0x8D648F823A0127E",
+    "contentType": "text/plain",
+    "contentLength": 0,
+    "blobType": "BlockBlob",
+    "url": "https://itime.blob.core.windows.net/testcontainer/testfile.txt",
+    "sequencer": "000000000000000000000000000003E5000000000092f1a9",
+    "storageDiagnostics": {
+      "batchId": "dd7f0381-38e4-4b7d-9f90-e740d7d5300e"
+    }
+  },
+  "dataVersion": "",
+  "metadataVersion": "1"
+}]
+
+###
+
+POST http://localhost:7071/runtime/webhooks/EventGridExtensionConfig?functionName=EventGridTrigger HTTP/1.1
+content-type: application/json
+aeg-event-type: notification
+
+{
+  "topic": "/subscriptions/5c514147-21c3-4f7e-8329-625443da4254/resourceGroups/i-time/providers/Microsoft.Storage/storageAccounts/itime",
+  "subject": "/blobServices/default/containers/testcontainer/blobs/testfile.txt",
+  "eventType": "Microsoft.Storage.BlobCreated",
+  "eventTime": "2018-11-12T23:39:50.6286206Z",
+  "id": "246ad0a7-201e-00b3-10e1-7acbe406fd39",
+  "data": {
+    "api": "PutBlob",
+    "clientRequestId": "3ed2fefe-e6d4-11e8-b9dd-0a580af44006",
+    "requestId": "246ad0a7-201e-00b3-10e1-7acbe4000000",
+    "eTag": "0x8D648F823A0127E",
+    "contentType": "text/plain",
+    "contentLength": 0,
+    "blobType": "BlockBlob",
+    "url": "https://itime.blob.core.windows.net/testcontainer/testfile.txt",
+    "sequencer": "000000000000000000000000000003E5000000000092f1a9",
+    "storageDiagnostics": {
+      "batchId": "dd7f0381-38e4-4b7d-9f90-e740d7d5300e"
+    }
+  },
+  "dataVersion": "",
+  "metadataVersion": "1"
+}
+
+### 
+runtime/webhooks/EventGridExtensionConfig?

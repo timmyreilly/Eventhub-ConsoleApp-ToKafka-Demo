@@ -1,0 +1,4 @@
+D:\Illumina\code\kafka-storage-PoC\Az-storage\obj\Debug\netcoreapp2.1\ClassLibrary1.csprojAssemblyReference.cache
+D:\Illumina\code\kafka-storage-PoC\Az-storage\obj\Debug\netcoreapp2.1\ClassLibrary1.csproj.CoreCompileInputs.cache
+D:\Illumina\code\kafka-storage-PoC\Az-storage\obj\Debug\netcoreapp2.1\ClassLibrary1.AssemblyInfoInputs.cache
+D:\Illumina\code\kafka-storage-PoC\Az-storage\obj\Debug\netcoreapp2.1\ClassLibrary1.AssemblyInfo.cs
